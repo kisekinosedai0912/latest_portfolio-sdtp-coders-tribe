@@ -1,5 +1,5 @@
 :root {
-  --bg-color1: #f1c40f;
+  --bg-color1: #FFA726;
   --bg-color2: rgb(245, 179, 65);
   --bg-color3: rgb(205, 202, 202);
 }
@@ -500,30 +500,49 @@ body {
   max-width: 968px;
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid orange;
 }
 
-.right-icons {
+.navigation-container {
   position: fixed;
-  right: 20px;
   top: 50%;
   transform: translateY(-50%);
-}
-.right-icons a {
-  display: block;
-  margin: 10px 0;
-  color: #fff;
+  right: 20px; 
   background-color: #FFA726;
-  padding: 10px;
-  border-radius: 50%;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  line-height: 30px;
-  text-decoration: none;
+  padding: 2px;
+  padding-top: 2.4rem;
+  height: 20rem;
+  border-radius: 25px;
+  z-index: 1000;
 }
-.right-icons a:hover {
+
+.navigation-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-menu li {
+  margin-bottom: 10px; 
+}
+
+.navigation-menu a {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  padding: 8px;
+  padding-bottom: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-menu a:hover {
   background-color: #f57c00;
+  color: white;
+}
+
+.navigation-menu a i {
+  font-size: 1.2em; 
 }
 
 .portfolio-filter {
@@ -542,3 +561,71 @@ body {
   color: black;
 }
 
+/* Web Development Project Style */
+.all-projects .project-item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.all-projects .project-item img {
+  width: 100%;
+  display: block;
+}
+.all-projects .project-item:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .all-projects .project-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .all-projects .project-item {
+    flex: 1 1 100%;
+  }
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.web-projects {
+  padding: 20px;
+  padding-top: 8rem;
+  display: block;
+  gap: 10px;
+}
+
+.web-item {
+  flex-grow: 1;
+  flex-basis: calc(25% - 20px); /* Approximately 25% of the container width minus some padding */
+  box-sizing: border-box;
+  max-width: calc(55% - 20px); /* Ensures that the items don't exceed 55% width */
+}
+
+.web-projects .web-item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.web-projects .web-item:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .web-projects .web-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .web-projects .web-item {
+    flex: 1 1 100%;
+  }
+}
+
+/* Web Development Project Style */
