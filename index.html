@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,9 +42,9 @@
                     <ul>
                         <li><a href="#home">Home</a></li> 
                         <li><a href="#about">About Me</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Portfolio</a></li> 
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> 
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -91,93 +92,134 @@
         </div>
 
         <!-- Resume Section -->
-<div class="resume-container">
-    <div class="resume-sidebar">
-        <img src="/images/441224656_856130106555684_6631477472344564394_n.jpg" alt="Profile Picture">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li> 
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Portfolio</a></li> 
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="content">
-        <div class="resume m-auto" id="about">
-            <h1>RESUME</h1>
-        </div>
-        
-        <div class="educ-container">
-            <!-- Education content -->
-            <div class="education">
-                <div class="education-phase mt-4">
-                    <h2><b>EDUCATION</b></h2>
-                    <div>
-                        <h6 class="highlight-1"><b>PRIMARY</b></h6>
-                    </div>
-                    <h6><b>ELEMENTARY</b></h6>
+        <div class="resume-container">
+            <div class="resume-sidebar">
+                <img src="/images/441224656_856130106555684_6631477472344564394_n.jpg" alt="Profile Picture">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li> 
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> 
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="resume m-auto">
+                    <h1 id="resume">RESUME</h1>
+                </div>
+                
+                <div class="educ-container">
+                    <!-- Education content -->
+                    <div class="education">
+                        <div class="education-phase mt-4">
+                            <h2><b>EDUCATION</b></h2>
+                            <div>
+                                <h6 class="highlight-1"><b>PRIMARY</b></h6>
+                            </div>
+                            <h6><b>ELEMENTARY</b></h6>
 
-                    <p>I studied at Jose B. Puey Senior Elementary School from kindergarten to grade 6, graduating in 2015. This school provided the essential foundation for my further education.</p>
+                            <p>I studied at Jose B. Puey Senior Elementary School from kindergarten to grade 6, graduating in 2015. This school provided the essential foundation for my further education.</p>
+                        </div>
+
+                        <div class="education-phase mt-4 exp-two">
+                            <div>
+                                <h6 class="highlight-2"><b>SECONDARY</b></h6>
+                            </div>
+                            <h6><b>HIGH SCHOOL & SENIOR HIGH SCHOOL</b></h6>
+
+                            <p>Started secondary education at Sagay National High School, and took the TVL track focusing on skill development. In senior high school, I transitioned to the STEM strand, specializing in Science, Technology, Engineering, and Mathematics, with the initial plan to pursue an engineering path.</p>
+                        </div>
+
+                        <div class="education-phase mt-4 exp-three">
+                            <div>
+                                <h6 class="highlight-1"><b>TERTIARY</b></h6>
+                            </div>
+                            <h><b>COLLEGE</b></h>
+
+                            <p>I enrolled at the State University of Northern Negros, pursuing a BS in Information Technology. This marked my first step towards a programming career, where I developed web and software systems as part of my projects.</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="education-phase mt-4 exp-two">
-                    <div>
-                        <h6 class="highlight-2"><b>SECONDARY</b></h6>
+                <hr class="divider">
+
+                <div class="exp-container">
+                    <!-- Experience content -->
+                    <div class="experience">
+                        <div class="exp-phase mt-1">
+                            <h2><b>EXPERIENCE</b></h2>
+                            <div>
+                                <h6 class="exp-highlight-1"><b>WEB DEVELOPMENT</b></h6>
+                            </div>
+                            <h6><b>J's PRIME CONSTRUCTION WEBSITE</b></h6>
+
+                            <p>Redesigned and improved the J's Prime Construction website using Bootstrap framework, CSS, and JavaScript to enhance responsiveness and overall functionality. Optimized the user interface for a more polished and engaging viewing experience, successfully achieving a high-quality website development.</p>
+                        </div>
+
+                        <div class="exp-phase mt-1 two">
+                            <div>
+                                <h6 class="exp-highlight-2"><b>SOFTWARE DEVELOPMENT</b></h6>
+                            </div>
+                            <h6><b>CLASSROOM SUPPORT TICKET SYSTEM & STUDENT INFORMATION SYSTEM</b></h6>
+
+                            <p>Currently developing a classroom support ticket system using Microsoft Power Apps to address student concerns in their school, academe, and other aspects through each ticket of concern submission. Previously developed a student information system utilizing Visual Basic 2010, which tracks, manages, and records student information, handles subject enrollment and generates reports.</p>
+                        </div>
+
+                        <div class="exp-phase mt-1 three">
+                            <div>
+                                <h6 class="exp-highlight-3"><b>UI/UX DESIGN</b></h6>
+                            </div>
+                            <h6><b>J's PRIME CONSTRUCTION UI/UX DESIGN</b></h6>
+
+                            <p>Created a wireframe and implemented a design for the UI/UX of J's prime construction website using figma and canva during my training at Coder's Tribe IT Solutions Software Development Training Program (SDTP). Our individual designs were collected and considered as references for the initial J's Prime Construction website design.</p>
+                        </div>
                     </div>
-                    <h6><b>HIGH SCHOOL & SENIOR HIGH SCHOOL</b></h6>
-
-                    <p>Started secondary education at Sagay National High School, and took the TVL track focusing on skill development. In senior high school, I transitioned to the STEM strand, specializing in Science, Technology, Engineering, and Mathematics, with the initial plan to pursue an engineering path.</p>
-                </div>
-
-                <div class="education-phase mt-4 exp-three">
-                    <div>
-                        <h6 class="highlight-1"><b>TERTIARY</b></h6>
-                    </div>
-                    <h><b>COLLEGE</b></h>
-
-                    <p>I enrolled at the State University of Northern Negros, pursuing a BS in Information Technology. This marked my first step towards a programming career, where I developed web and software systems as part of my projects.</p>
                 </div>
             </div>
         </div>
 
-        <hr class="divider">
-
-        <div class="exp-container">
-            <!-- Experience content -->
-            <div class="experience">
-                <div class="exp-phase mt-1">
-                    <h2><b>EXPERIENCE</b></h2>
-                    <div>
-                        <h6 class="exp-highlight-1"><b>WEB DEVELOPMENT</b></h6>
-                    </div>
-                    <h6><b>J's PRIME CONSTRUCTION WEBSITE</b></h6>
-
-                    <p>Redesigned and improved the J's Prime Construction website using Bootstrap framework, CSS, and JavaScript to enhance responsiveness and overall functionality. Optimized the user interface for a more polished and engaging viewing experience, successfully achieving a high-quality website development.</p>
+        <!-- About Me Section -->
+        <div class="portfolio-container">
+            <div class="portfolio-sidebar">
+                <img src="/images/441224656_856130106555684_6631477472344564394_n.jpg" alt="Profile Picture">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li> 
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> 
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="about m-auto" id="portfolio">
+                    <h1>PORTFOLIO</h1>
                 </div>
-
-                <div class="exp-phase mt-1 two">
-                    <div>
-                        <h6 class="exp-highlight-2"><b>SOFTWARE DEVELOPMENT</b></h6>
-                    </div>
-                    <h6><b>CLASSROOM SUPPORT TICKET SYSTEM & STUDENT INFORMATION SYSTEM</b></h6>
-
-                    <p>Currently developing a classroom support ticket system using Microsoft Power Apps to address student concerns in their school, academe, and other aspects through each ticket of concern submission. Previously developed a student information system utilizing Visual Basic 2010, which tracks, manages, and records student information, handles subject enrollment and generates reports.</p>
+                
+                <div class="container-fluid p-content">
+                    <div class="portfolio-filter">
+                        <a style="color: lightgray;" href="#">All</a>
+                        <a href="#">Web Development</a>
+                        <a href="#">Software Development</a>
+                        <a href="#">UI/UX Design</a>
+                        <a href="#">Certificates</a>
+                      </div>
                 </div>
-
-                <div class="exp-phase three">
-                    <div>
-                        <h6 class="exp-highlight-3"><b>WEB DESIGN</b></h6>
-                    </div>
-                    <h><b>NEGROS OCCIDENTAL LANGUAGE AND INFROMATION CENTER WEB DESIGN</b></h>
-
-                    <p>Designed a website for Negros Occidental Language and Information Center (NOLITC) during my training at Coder's Tribe IT Solutions Software Development Training Program (SDTP). Our individual designs were collected and considered as references for the initial NOLITC website design.</p>
-                </div>
+                
             </div>
         </div>
-    </div>
-</div>
+            
+          
+        <div class="right-icons">
+        <a href="#"><i class="icon icon-home"></i></a>
+        <a href="#"><i class="icon icon-user"></i></a>
+        <a href="#"><i class="icon icon-briefcase"></i></a>
+        <a href="#"><i class="icon icon-comments"></i></a>
+        <a href="#"><i class="icon icon-envelope"></i></a>
+        </div>
 
        
 
