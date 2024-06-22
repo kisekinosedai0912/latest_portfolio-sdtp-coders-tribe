@@ -105,7 +105,7 @@ body {
   display: flex;
   width: 100%;
   height: 100dvh;
-  margin-top: 6rem;
+  margin-top: 2rem;
   background-color: whitesmoke;
 }
 
@@ -196,19 +196,19 @@ body {
 
 .content-stat {
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items:flex-start;
+  justify-content:space-evenly;
+  margin-top: .8rem;
 }
 
 .stats {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items:flex-start;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 60%;
-  height: 90%;
-  margin:0;
   gap: .1rem;
+  margin: 0 auto;
 }
 
 .stat {
@@ -243,30 +243,16 @@ body {
 }
 
 .what-i-do {
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 1rem;
+  margin: 0 auto;
+  padding-left: 16px;
   height: 20.1rem;
+  width: 38%;
 }
-
-.what-i-do ul {
-  list-style: none;
-  padding: 0;
-}
-
-.what-i-do ul li {
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.what-i-do ul li i {
-  font-size: 2em;
-  margin-right: 10px;
-}
-
-.what-i-do ul li p {
-  margin: 0;
+.what-i-do h2 {
+  margin-left: 0;
 }
 
 /* Resume Styles */
@@ -274,7 +260,7 @@ body {
   display: flex;
   width: 100%;
   height: 100dvh;
-  margin-top: 6rem;
+  margin-top: 2rem;
   background-color: whitesmoke;
 }
 
@@ -493,7 +479,7 @@ body {
   display: flex;
   width: 100%;
   height: 100dvh;
-  margin-top: 6rem;
+  margin-top: 2rem;
   background-color: whitesmoke;
 }
 
@@ -591,6 +577,7 @@ body {
 .navigation-menu a i {
   font-size: 1.2em; 
 }
+
 
 .portfolio-filter {
   text-align: center;
@@ -735,6 +722,7 @@ body {
 
 /* For Mobile Phones */
 @media screen and (min-width: 300px) and (max-width: 430px) {
+  /* Home */
   .outer-container {
     display: flex; 
     flex-direction: column;
@@ -790,6 +778,84 @@ body {
     display: none;
   }
 
+  .navigation-container {
+    display: block;
+  }
+
+  .navbar {
+    display: none; /* Hide the navbar on larger screens */
+  }
+  /* About */
+  .about-container {
+    height: 100dvh;
+  }
+  .resume-sidebar {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+  .about {
+    margin: 0 auto;
+  }
+  .about h1 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .caption h2,  .caption h2 span {
+    font-size: 1rem;
+  }
+  .caption p {
+    font-size: .8rem;
+  }
+  .content-stat {
+    display: contents;
+    margin-top: 0;
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
+  .stat {
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .stat-1, .stat-2, .stat-3, .stat-4 {
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .stat h3{
+    font-size: .8rem;
+    margin-left: 1.4rem;
+  }
+  .stat p {
+    font-size: .5rem;
+    padding-top: 0;
+    margin-top: 0;
+    width: 5rem;
+    margin: 0 auto;
+  }
+  .what-i-do h2{
+    font-size: 1rem;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .what-i-do {
+    width: 100%;
+    margin-top: .5rem;
+  }
+  .services h5 {
+    font-size: .7rem;
+  }
 }
 
 /* For tablets */
