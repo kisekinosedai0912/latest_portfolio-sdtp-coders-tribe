@@ -806,7 +806,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
+    width: 88%;
   }
   .content {
     margin: 0;
@@ -815,12 +815,8 @@ body {
   .caption h2,  .caption h2 span {
     font-size: .9rem;
   }
-  .caption h2 {
-    margin-left: 1rem;
-  }
   .caption p {
     font-size: .8rem;
-    margin-left: 1rem;
   }
   .content-stat {
     display: contents;
