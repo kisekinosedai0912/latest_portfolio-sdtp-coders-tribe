@@ -806,11 +806,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    border: 1px solid orange;
+    width: 95%;
   }
   .content {
-    border: 1px solid orange;
     margin: 0;
     padding: 0;
   }
