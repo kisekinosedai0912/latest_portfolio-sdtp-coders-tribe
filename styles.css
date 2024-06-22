@@ -26,6 +26,15 @@ body {
   background-color: whitesmoke;
 }
 
+.home-p {
+  font-weight: bold; 
+  background-color: var(--bg-color1); 
+  padding-left: .6rem; 
+  width: 54%; 
+  font-family: 'Quicksand'; 
+  font-size: small;
+}
+
 .p-context, .container-2 {
   width: 50%;
   height: 100%;
@@ -33,6 +42,7 @@ body {
 
 .container-2 {
   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/images/landing-image.png) center / cover no-repeat;
+  object-fit: cover;
 }
 
 .home-text {
@@ -719,4 +729,70 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+/* Responsiveness */
+
+/* For Mobile Phones */
+@media screen and (min-width: 300px) and (max-width: 430px) {
+  .outer-container {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(/images/landing-image.png) center / cover no-repeat;
+    object-fit: cover;
+    margin-top: 0;
+    padding-top: 1.2rem;
+    position: relative;
+  }
+  .home-text h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+    color: white;
+  }
+  #home {
+    position: relative;
+  }
+  .home-text h2 span {
+    font-size: 1.8rem;
+  }
+  .home-text h1, .home-text h1 span{
+    font-size: 2.4rem;
+    margin-left: 0;
+  }
+  .home-text h1 {
+    color: white;
+  }
+  .home-text p {
+    margin-left: 0;
+    width: 70%;
+  }
+  .home-p {
+    font-size: .6rem;
+    width: 71%;
+  }
+  .p-context p {
+    font-size: .6rem;
+  }
+  .p-text p {
+    color: white;
+  }
+  .buttons {
+    display: flex;
+    margin: 0 auto;
+  }
+  .resume-btn, .contact-btn {
+    width: 6rem;
+    height: 1.8rem;
+    font-size: .6rem;
+  }
+  .container-2 {
+    display: none;
+  }
+
+}
+
+/* For tablets */
+@media screen and (min-width: 577px) and (max-width: 770px) {
+
 }
